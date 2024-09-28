@@ -1345,29 +1345,6 @@ end
       return window
     end
 	
-local window = library:new("伐木大亨2")
-
-local creds = window:Tab("基本信息",'3460915131')
-
-local bin = creds:section("信息",true)
-
-    bin:Label("你的用户名:"..game.Players.LocalPlayer.Character.Humanoid.Name)
-    bin:Label("你的注入器:"..identifyexecutor())
-
-local credits = creds:section("UI设置",true)
-
-    credits:Button("摧毁UI",function()
-        game:GetService("CoreGui")["frosty"]:Destroy()
-    end)
-
-    credits:Toggle("彩虹UI", "", false, function(state)
-        if state then
-        game:GetService("CoreGui")["frosty"].Main.Style = "DropShadow"
-        else
-            game:GetService("CoreGui")["frosty"].Main.Style = "Custom"
-        end
-    end)
-    
 repeat task.wait() until game:IsLoaded()
 local library = {}
 local ToggleUI = false
