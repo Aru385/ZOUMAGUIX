@@ -1,4 +1,7 @@
-repeat task.wait() until game:IsLoaded()
+repeat
+task.wait()
+until
+game:IsLoaded()
 local library = {}
 local ToggleUI = false
 library.currentTab = nil
