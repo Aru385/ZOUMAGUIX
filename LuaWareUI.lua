@@ -1,6 +1,6 @@
---local library = {}
+local library = {}
 local ToggleUI = false
-library.currentTab = nil
+--library.currentTab = nil
 library.flags = {}
 
 local services = setmetatable({}, {
