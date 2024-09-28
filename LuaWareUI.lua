@@ -1,4 +1,3 @@
-repeat task.wait() until game:IsLoaded()
 local library = {}
 local ToggleUI = false
 library.currentTab = nil
@@ -10,10 +9,10 @@ local services = setmetatable({}, {
   end
 })
 
-local mouse = services.Players.LocalPlayer:GetMouse(),function Tween(obj, t, data)
-	services.TweenService:Create(obj, TweenInfo.new(t[1], Enum.EasingStyle[t[2]], Enum.EasingDirection[t[3]]), data):Play()
-	return true
-end
+--local mouse = services.Players.LocalPlayer:GetMouse(),function Tween(obj, t, data)
+--	services.TweenService:Create(obj, TweenInfo.new(t[1], Enum.EasingStyle[t[2]], Enum.EasingDirection[t[3]]), data):Play()
+--	return true
+--end
 
 function Ripple(obj)
 	spawn(function()
